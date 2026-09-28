@@ -1,0 +1,15 @@
+generated: '2026-09-28'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: bitkey.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Nov 20 09:46:44 2026 GMT
+  hsts: false
+domains:
+- domain: bitkey.com
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: false

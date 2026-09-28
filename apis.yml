@@ -1,23 +1,60 @@
 aid: bitkey
+
 name: Bitkey
-description: 'Bitkey is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Bitkey is a technology company that provides secure, user‑friendly cryptocurrency wallet solutions. Their platform enables individuals and institutions to store, manage, and transact digital assets with advanced security features such as multi‑signature, hardware isolation, and biometric authentication. Bitkey focuses on simplifying crypto experiences while maintaining compliance and robust risk management, targeting both retail users and enterprise clients.'
+
 url: https://raw.githubusercontent.com/api-evangelist/bitkey/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-28'
+
 modified: '2026-09-28'
+
 tags:
 - Company
-apis: []
+- Cryptocurrency
+- Wallet
+- Security
+- FinTech
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/bitkey-hosts.yml
+- type: Vendors
+  url: vendors/bitkey-vendors.yml
+- type: DomainSecurity
+  url: security/bitkey-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://bitkey.com/
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Documentation pages return empty shells with no machine‑readable spec.
+  evidence:
+    - url: https://bitkey.com/docs
+      status: 200
+  checked: '2026-09-28'
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
