@@ -25,9 +25,12 @@ hosts:
   - probed
   - contract-discovery
   - well-known
+  - vendor-detect
   types:
   - Website
-  serves: []
+  serves:
+  - cdn
+  vendor: cloudflare
   registrable_domain: bitkey.com
   role: website
   relation: own
